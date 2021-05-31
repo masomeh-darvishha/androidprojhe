@@ -75,7 +75,7 @@
             android:layout_gravity="center"
             android:backgroundTint="#CDB123"
             android:gravity="center"
-            android:onClick="onclick"
+            android:onClick="onclicke"
             android:text="add member"
             android:textColor="@color/purple_700"
             android:textSize="18sp" />
