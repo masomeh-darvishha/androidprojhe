@@ -10,57 +10,80 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/login"
-        android:layout_width="211dp"
-        android:layout_height="186dp"
+        android:layout_width="278dp"
+        android:layout_height="137dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.058"
-        app:lottie_autoPlay="false"
         app:lottie_imageAssetsFolder="/image"
         app:lottie_rawRes="@raw/login" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="416dp"
-        android:layout_height="289dp"
-        android:layout_marginBottom="178dp"
+        android:layout_width="396dp"
+        android:layout_height="418dp"
+        android:background="@drawable/d"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="375dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/wallet" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Wallet"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/emailbox"
             android:layout_width="322dp"
-            android:layout_height="94dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/email"
             android:ems="10"
+            android:foregroundGravity="center"
             android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:textColor="#2400EE"
-            android:textSize="18sp" />
+            android:hint="Emil Address"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
-            android:layout_width="324dp"
-            android:layout_height="78dp"
+            android:id="@+id/passwordbox"
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/password"
             android:ems="10"
             android:gravity="center"
+            android:hint="Password"
             android:inputType="textPassword"
-            android:text="Password"
-            android:textColor="#2400EE"
+            android:textColor="@color/white"
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/loginbtn"
             android:layout_width="138dp"
-            android:layout_height="58dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#CDB123"
             android:gravity="center"
@@ -69,7 +92,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/createbtn"
             android:layout_width="164dp"
             android:layout_height="58dp"
             android:layout_gravity="center"

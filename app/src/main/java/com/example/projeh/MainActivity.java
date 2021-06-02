@@ -21,12 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onclicke(View v) {
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(MainActivity.this, submit.class));
+        startActivity(new Intent(MainActivity.this, submit.class));
 
-            }
-        }, 1000);
     }
 }
