@@ -71,6 +71,10 @@ Button loginbtn,createbtn;
             Toast.makeText(submit.this, "the password not match", Toast.LENGTH_SHORT).show();
         }
         }
+    public void onclick1(View v) {
+        startActivity(new Intent(submit.this, MainActivity.class));
+
+    }
 
 }
 

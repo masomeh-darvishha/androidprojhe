@@ -5,26 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/d"
-    tools:contect=".MainActivity"
-    >
+    tools:contect=".MainActivity">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/login"
-        android:layout_width="278dp"
-        android:layout_height="137dp"
+        android:layout_width="363dp"
+        android:layout_height="214dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
         app:lottie_imageAssetsFolder="/image"
-        app:lottie_rawRes="@raw/login" />
+        app:lottie_rawRes="@raw/card" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="396dp"
-        android:layout_height="418dp"
+        android:layout_width="395dp"
+        android:layout_height="397dp"
         android:background="@drawable/d"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,8 +35,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="375dp"
-            android:layout_height="148dp"
+            android:layout_width="359dp"
+            android:layout_height="103dp"
             android:layout_gravity="center"
             app:srcCompat="@drawable/wallet" />
 
@@ -87,6 +86,7 @@
             android:layout_gravity="center"
             android:backgroundTint="#CDB123"
             android:gravity="center"
+            android:onClick="onclickl"
             android:text="log in"
             android:textColor="@color/purple_700"
             android:textSize="18sp" />
