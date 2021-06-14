@@ -12,13 +12,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.projeh.databinding.ActivityMainBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-
+ActivityMainBinding binding;
     LottieAnimationView login;
      EditText emailbox,passwordbox;
      Button loginB,submit;
@@ -51,7 +52,7 @@ ProgressDialog dialog;
 if(task.isSuccessful())
 {
 dialog.dismiss();
-    startActivity(new Intent(MainActivity.this, submit.class));
+    startActivity(new Intent(MainActivity.this,doashbord.class));
 }
 else{
     Toast.makeText(MainActivity.this,task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
@@ -61,7 +62,7 @@ else{
 
     }
     public void onclicke(View v) {
-        startActivity(new Intent(MainActivity.this, dashboard.class));
+        startActivity(new Intent(MainActivity.this, submit.class));
 
     }
 }
