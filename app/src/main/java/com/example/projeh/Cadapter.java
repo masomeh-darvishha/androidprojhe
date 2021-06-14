@@ -2,7 +2,6 @@ package com.example.projeh;
 
 
 import android.content.Context;
-import android.graphics.ColorSpace;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,19 +11,25 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.security.PublicKey;
-import java.util.ArrayList;
+import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
 public class Cadapter extends RecyclerView.Adapter<Cadapter.CatgorViewHolder>
 {
+
     ArrayList<Cmodel> cmodels;
     Context context;
 
-    public Cadapter(Context context,ArrayList<Cmodel>cmodels)
+    public Cadapter(dashbord context, ArrayList<Cmodel>cmodels)
     {
-        this.context=context;
+     //   this.context=context;
         this.cmodels=cmodels;
+
     }
+
+    public <onOpttionItemSelete> Cadapter(doashbord<onOpttionItemSelete> onOpttionItemSeletedoashbord, ArrayList<Cmodel> categories){
+    }
+
     @NonNull
     @Override
     public CatgorViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
@@ -36,7 +41,7 @@ public class Cadapter extends RecyclerView.Adapter<Cadapter.CatgorViewHolder>
     public void onBindViewHolder(@NonNull CatgorViewHolder holder, int position){
 Cmodel model= cmodels.get(position);
 holder.name.setText(model.getName());
-        holder.price.setText(model.getPrice());
+Glide.with(context).load(model.getLogo()).into(holder.logo);
 
     }
 

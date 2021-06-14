@@ -10,21 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/blue">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView2"
-            android:layout_width="284dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="67dp"
-            android:layout_marginBottom="557dp"
-            android:background="@color/purple_700"
-            app:layout_constraintBottom_toTopOf="@+id/button5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.488"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:menu="@menu/ad" />
+        android:background="@drawable/d">
 
         <LinearLayout
             android:id="@+id/linearLayout2"
@@ -57,7 +43,7 @@
                     android:textSize="20dp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/mablagh"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -78,7 +64,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/daste"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -157,7 +143,7 @@
             android:layout_width="108dp"
             android:layout_height="46dp"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/purple_700"
+            android:backgroundTint="#CDB123"
             android:text="ثبت درامد"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
